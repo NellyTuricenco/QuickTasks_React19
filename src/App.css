@@ -1,42 +1,85 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
+ #root ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 1rem;
+ }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-wrapper {
+  padding: 1em;
+  background-color:aqua;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
 }
 
-.card {
-  padding: 2em;
+.title {
+  font-size: 2rem;
+  color: #333;
+}
+.task-form {
+  display: flex;
+  width: 100%;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.form-input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+.form-button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #13dbe6;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  min-width:fit-content;
+  min-height: 2rem;
+}
+
+.form-button:hover {
+  background-color: #1387e6;
+  transition: background-color 0.5s;
+}
+
+.task-list_empty {
+  font-size: 1.2rem;
+  color: #ff0000;
+  width: 100%;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.task-list_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1rem;
 }

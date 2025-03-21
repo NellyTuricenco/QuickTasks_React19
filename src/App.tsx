@@ -13,8 +13,11 @@ function App() {
   }
 
   return (
-      <div style={{ padding: '2em', fontFamily: 'sans-serif'}}>
-        <ListTodo size={20}/> <h1>Quick Tasks</h1>
+      <div className='app-wrapper'>
+        <div className='title-wrapper'>
+        <ListTodo size={30}/> 
+        <h1 className="title">Quick Tasks</h1>
+        </div>
         <TaskForm onAdd={handleAddTask} />
         <TaskList tasks={tasks} />
       </div>
