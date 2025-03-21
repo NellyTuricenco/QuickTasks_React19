@@ -1,4 +1,4 @@
-# QuickTasks_React19
+# QuickTasks (React19)
 A modern task tracker app built with React 19 (canary) and TypeScript.  
 This project is designed to explore and practice the latest React 19 features using Vite.
 
