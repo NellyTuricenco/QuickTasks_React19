@@ -21,3 +21,5 @@ const TaskList: React.FC<Props> = ({ tasks }) => {
     </ul>
   )
 };
+
+export default TaskList;
